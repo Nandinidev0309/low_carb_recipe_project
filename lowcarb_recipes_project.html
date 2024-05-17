@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Search</title>
+    <script
+      src="https://kit.fontawesome.com/2c1a1e78a7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./low_carb_recipes_project.css" />
+  </head>
+  <body>
+    <!-- ui front page -->
+    <div class="homepage">
+      <form></form>
+    </div>
+    <!-- navigation part -->
+    <header class="hero">
+      <h1>Delicious Recipes</h1>
+      <h2>Welcome to our Recipe Collection !</h2>
+      <form id="searchForm">
+        <input type="text" id="searchInput" placeholder="Search Recipes" />
+        <button type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+    </header>
+    <!-- recipe cards -->
+    <div id="recipeCards" class="container"></div>
+
+    <!-- modal recipe card -->
+
+    <div id="recipeDetailsModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div style="display: flex;">
+          <div>
+            <h2 id="recipeName"></h2>
+            <img id="recipeImage" src="" alt="Recipe Image" />
+          </div>
+
+          <div>
+            <h3>Ingredients:</h3>
+            <ol id="recipeIngredients"></ol>
+          </div>
+
+          <div>
+            <h3>Steps:</h3>
+            <ol id="recipeSteps"></ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./low_carb_recipes_project.js"></script>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipes</title>
+    <style>
+      /* homepage */
+      body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      }
+      .homepage {
+        background-image: url("https://img.freepik.com/premium-photo/fresh-vegetables-black-background-variety-raw-vegetables-colorful-various-herbs-spices_226666-1281.jpg");
+        background-size: cover;
+         height: 80vh;
+         
+        
+      }
+      form{
+        text-align: center;
+        padding-top:2% ;
+       
+      }
+      .buttons{
+        padding: 10px;
+        margin-bottom: 10px;
+        width: 13%;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        border-color:black;
+        background-color: rgb(141, 112, 144);
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+      }
+      .head{
+        color: white;
+        text-align: center;
+        padding: 50px;
+        font-family: Arial, sans-serif;
+      }
+      /* footer */ 
+
+  footer{
+    background: rgb(116, 138, 60);
+    padding: 30px 0;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif; 
+  } 
+
+  /* Media queries */
+  @media screen and (max-width: 768px) {
+        .head {
+          padding: 20px;
+          font-size:20px;
+        }
+        
+        .buttons {
+          width: 13%;
+        }
+  }
+  @media screen and (min-width:0px) and (max-width:300px){
+    .buttons {
+          width: 60%;
+        }
+  }
+
+   @media screen and (min-width:300px) and (max-width:601px){
+    .buttons {
+          width: 20%;
+         
+        }
+  }    
+  @media screen and(min-width:601px) and (max-width: 768px) {
+        .homepage {
+          height: 60vh;
+        }
+        .buttons {
+          min-width: 13%;
+        }
+  }
+    </style>
+  </head>
+  <body>
+    <!-- homepage -->
+    <div class="homepage">
+       <h1 class="head">IT'S &nbsp All &nbspABOUT&nbsp GOOD FOOD &nbspAND&nbsp GOOD TASTE..!</h1>
+       
+    </div>
+    <form >   
+        <input class="buttons" type="submit" value="ClickMe" formaction="./lowcarb_recipes_project.html"/>
+    </form>
+    <!-- footer -->
+    <footer>   
+        <div>
+          <p>&copy; 2024 Delicious Recipes</p>
+          </div>
+        </div>
+    </footer> 
+  </body>
+</html>

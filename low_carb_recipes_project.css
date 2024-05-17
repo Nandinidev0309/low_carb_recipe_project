@@ -1,0 +1,220 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.hero{
+    background-color: rgb(43, 38, 38);
+    background-size: cover;
+    height: 10vh;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    padding: 140px 0; 
+    color: white; 
+    text-align: center;
+    width: 100%;
+} 
+form input{
+    padding: 10px;
+    padding-left: 30px;
+    color: white;
+    font-size: 16px;
+    border-color: red;
+
+}
+form button{
+    padding: 10px;
+    background: red; 
+    border-color: black;
+    border-width: 3px;
+    color: white;
+    font-size: 16px;
+    margin-left: -3px;
+}
+
+
+/* for search bar */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* cards in ui design */
+.card {
+    width: 300px;
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+.card button {
+    display: block;
+    margin: 10px auto 0;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #555;
+}
+
+/* Modal styles */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    border-radius: 5px;
+    position: relative;
+    text-align: center; 
+    font-family: Arial, sans-serif;
+}
+#recipeImage { 
+    width: 50vh;
+    height: 50vh;  
+    border-radius: 5px;
+    margin-bottom: 10px;
+   
+
+}
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+ol {
+    list-style-type: none;
+    padding: 0;
+}
+ /* Ingredients and Steps section styles */
+ h3 {
+    margin-top: 20px;
+ }   
+
+ol#recipeIngredients,
+#recipeSteps {
+    padding-left: 20px;
+
+}
+
+ol#recipeIngredients li,
+#recipeSteps li {
+    margin-bottom: 10px;
+}
+
+#recipeSteps li {
+    list-style-type: none; 
+}
+
+
+/* mediascreen */
+
+ @media screen and (min-width:0px) and (max-width:350px){
+    .hero{
+        padding-bottom:150px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 15px;
+    }
+    input{
+        width:50px;
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+    button{
+        /* font-size: 15px; */
+        width:30px
+    }
+    i{
+        font-size: 9px;
+        padding:0px;
+        margin:0px;
+    }
+    /* cards */
+    .container{
+        padding-left:5px;
+        padding-right:5px;
+    }
+    .button1{
+        width:70px; 
+        font-size: 9px;
+        padding:1px;
+    }
+ }
+
+ /* for modal card */
+ @media screen and (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+        margin: 15% auto;
+    }
+
+   
+    #recipeImage {
+        width: 70%;
+        height: auto;
+    }
+
+    
+    .modal-content > div {
+        flex-direction: column;
+    }
+
+    
+    #recipeIngredients {
+        max-width: 300px; 
+          margin:0 auto; 
+    }
+
+    
+    #recipeSteps {
+        max-width: 300px; 
+        margin: 0 auto; 
+    }
+
+    .close {
+        font-size: 20px;
+    }
+}
